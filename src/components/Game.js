@@ -40,12 +40,12 @@ img{
   padding: 0.5rem;
 }
 
-&:hover{
+/* &:hover{
   transform: scale(1.1);
   background: black;
   h3, p {
     color: white;
-  }
+  } */
 }
 
 
