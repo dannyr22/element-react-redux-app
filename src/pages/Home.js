@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadGames } from '../actions/gamesAction';
+import { fadeIn } from '../animations';
 
 //components
 import Game from '../components/Game';
@@ -28,7 +29,7 @@ const Home = () => {
   const { popular, upcoming, newGames, searched } = useSelector(state => state.games);
 
   return (
-    <GameList>
+    <GameList variants={fadeIn} initial="hidden" animate="show">
       <AnimateSharedLayout type="switch">
         <AnimatePresence>
           {pathId && <GameDetail pathId={pathId} />}

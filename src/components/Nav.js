@@ -5,6 +5,7 @@ import logo from '../img/logo.svg';
 //REDUX and ROUTES
 import { fetchSearch } from '../actions/gamesAction';
 import { useDispatch } from 'react-redux';
+import { fadeIn } from '../animations';
 
 
 const Nav = () => {
@@ -26,7 +27,7 @@ const Nav = () => {
   }
 
   return (
-    <NavStyle>
+    <NavStyle variants={fadeIn} initial="hidden" animate="show">
         <Logo onClick={clearSearched} >
           <img src={logo} alt="logo" />
           <h1>Element</h1>
