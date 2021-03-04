@@ -42,6 +42,14 @@ a{
   text-decoration: none;
   color: #333;
 }
+img{
+  display: block;
+}
+
+input{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
 
 `
 
