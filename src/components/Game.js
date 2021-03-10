@@ -39,6 +39,15 @@ text-align: center;
 border-radius: 1rem;
 cursor: pointer;
 overflow: hidden;
+transition: all 0.5s ease-in-out;
+&:hover{
+  background-color: black;
+  transform: scale(1.4);
+  p, h3{
+    color: white;
+  }
+  
+}
 
 img{
   width: 100%;

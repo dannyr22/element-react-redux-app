@@ -41,10 +41,8 @@ const Nav = () => {
 }
 
 const NavStyle = styled(motion.nav)` 
-position: sticky;
 padding: 3rem 5rem;
 text-align: center;
-/* justify-content: center; */
 top: 0;
 background: white;
 input {
